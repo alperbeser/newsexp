@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <style type="text/css">
     .likert ul
@@ -47,8 +48,8 @@ function shuffleWord (word){
 }
 
 function setupSession() {
-    var pageOrderString = "ABCDEFGHIJKLMNOPQRST";
-   // var pageOrderString = "AB";
+    //var pageOrderString = "ABCDEFGHIJKLMNOPQRST";
+    var pageOrderString = "A";
     pageOrderString = shuffleWord(pageOrderString);
     sessionStorage.setItem('pageOrderString', pageOrderString);
 }
@@ -65,7 +66,7 @@ function setNextPage() {
     console.log(pageOrderString);
 }
 
-window.onload = (event) => {
+window.onload = function() {
     setupSession();
     setNextPage();
 };
@@ -81,5 +82,5 @@ window.onload = (event) => {
 <br>
 <br>
 </center>
-<label style="color:#e5e5e5;">C</label>
+<label style="color:#e5e5e5;"></label>
 </body>
