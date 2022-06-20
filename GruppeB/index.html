@@ -48,8 +48,8 @@ function shuffleWord (word){
 }
 
 function setupSession() {
-    //var pageOrderString = "ABCDEFGHIJKLMNOPQRST";
-    var pageOrderString = "A";
+    var pageOrderString = "ABCDEFGHIJKLMNOPQRST";
+    //var pageOrderString = "A";
     pageOrderString = shuffleWord(pageOrderString);
     sessionStorage.setItem('pageOrderString', pageOrderString);
 }
