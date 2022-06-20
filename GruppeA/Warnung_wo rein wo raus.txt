@@ -1,0 +1,8 @@
+Warnung rein bei:
+- D
+- I
+
+
+Warnung raus bei:
+- Q
+- O 
